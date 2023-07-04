@@ -1,0 +1,40 @@
+.card {
+    position: relative;
+    margin: 80px auto;
+    border-radius: 30px;
+    background-color: darkgrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    max-width: 500px;
+
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.bg-01d, &.bg-01n { background-image: url('./assets/01d.jpg'); }
+  &.bg-02d, &.bg-02n { background-image: url('./assets/02d.jpg'); }
+  &.bg-03d, &.bg-03n { background-image: url('./assets/03d.jpg'); }
+  &.bg-04d, &.bg-04n { background-image: url('./assets/04d.jpg'); }
+  &.bg-09d, &.bg-09n { background-image: url('./assets/09d.jpg'); }
+  &.bg-10d, &.bg-10n { background-image: url('./assets/10d.jpg'); }
+  &.bg-11d, &.bg-11n { background-image: url('./assets/11d.jpg'); }
+  &.bg-13d, &.bg-13n { background-image: url('./assets/13d.jpg'); }
+  &.bg-50d, &.bg-50n { background-image: url('./assets/50d.jpg'); }
+}
+
+.card-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.is-loading {
+  filter: brightness(50%);
+}

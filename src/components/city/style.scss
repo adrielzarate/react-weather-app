@@ -1,0 +1,47 @@
+.container {
+    position: relative;
+}
+
+.inputCityName {
+    border-width: thin;
+    border-color: transparent;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+
+    &:hover,
+    &:focus {
+        border-color: transparent;
+        border-bottom: #fff solid thin;
+        outline: none;
+    }
+}
+
+.cities-list {
+    position: absolute;
+    top: 35px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    .cities-item {
+        background-color: #fff;
+        color: #999;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        width: 420px;
+
+        &:last-child {
+            border-radius: 0 0 10px 10px;
+        }
+
+        .city-name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 400px;
+        }
+    }
+}

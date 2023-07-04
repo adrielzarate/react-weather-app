@@ -1,0 +1,28 @@
+.card-footer {
+    border: #fff solid 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.col {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+
+    & + .col::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        border-left: #fff solid thin;
+        height: 30px;
+        top: 50%;
+        margin-top: -15px;
+    }
+
+    .value {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+}
